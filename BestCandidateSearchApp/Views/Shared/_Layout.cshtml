@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+<body class="container">
+    <Header class="bg-primary">
+        <h3 class="col-5 offset-3 p-4 text-white">Best Candidate search engine</h3>
+    </Header>
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/node_modules/jquery/dist/jquery.js"></script>
+    <script src="~/node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="~/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+</body>
+</html>
