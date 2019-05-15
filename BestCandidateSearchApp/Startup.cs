@@ -18,8 +18,8 @@ namespace BestCandidateSearchApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddScoped<ICandidateServices, CandidatesServices>();
-            services.AddScoped<IPositionServices, PositionServices>();
+            services.AddScoped<ICandidateRepository, CandidateRepository>();
+            services.AddScoped<IPositionRepository, PositionRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

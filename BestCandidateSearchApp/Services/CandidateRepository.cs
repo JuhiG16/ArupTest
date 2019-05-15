@@ -6,7 +6,7 @@ using BestCandidateSearchApp.Models;
 
 namespace BestCandidateSearchApp.Services
 {
-    public class CandidatesServices :ICandidateServices
+    public class CandidateRepository :ICandidateRepository
     {
         IEnumerable<Candidate> candidates = new List<Candidate>
             {
@@ -22,16 +22,9 @@ namespace BestCandidateSearchApp.Services
                      Phone="041237590", Skills = new List<string>{"C#", "MVC", "SQL","React.js" } },
                 new Candidate {CandidateId = 6, Name = "Mads J", Email="Mads.J@gmail.com",
                      Phone="041237590", Skills = new List<string>{"PHP"} },
-                new Candidate {CandidateId = 7, Name = "Alan J", Email="Alan.J@gmail.com",
-                     Phone="041237590", Skills = new List<string>{"PHP"} },
-
             };
 
-        public CandidatesServices()
-        {
-           
-        }
-
+      
         public IEnumerable<Candidate> GetAll()
         {
             return candidates.ToList();
@@ -42,6 +35,8 @@ namespace BestCandidateSearchApp.Services
             return candidates.SingleOrDefault(c => c.CandidateId == id);
         }
 
+        //This service currently return best one student.
+        //Logic can be changed if multiple candidates have same skills.
         public Candidate SearchCandidateBySkills (List<string> skills)
         {
             int skillCount = 0;

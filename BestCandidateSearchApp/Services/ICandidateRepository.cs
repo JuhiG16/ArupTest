@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BestCandidateSearchApp.Models;
-
 namespace BestCandidateSearchApp.Services
 {
-    public interface IPositionServices
+    public interface ICandidateRepository
     {
-        IEnumerable<Position> GetAll();
-        Position GetById(int id);
+
+        IEnumerable<Candidate> GetAll();
+        Candidate GetById(int id);
+        Candidate SearchCandidateBySkills(List<string> skills);
     }
 }

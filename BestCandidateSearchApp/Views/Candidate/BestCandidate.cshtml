@@ -1,0 +1,32 @@
+﻿@model CandidateViewModel
+@{
+    ViewData["Title"] = "SearchCandidate";
+}
+
+<h2>Best candidate search result</h2>
+
+    <table class="table table-primary">
+        <thead>
+            <tr>
+                <th>Candidate Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Skills</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>@Model.CandidateId</td>
+                <td>@Model.Name</td>
+                <td>@Model.Email</td>
+                <td>@Model.Phone</td>
+                <td>@String.Join(",", Model.Skills)</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+@Html.ActionLink("Back to position list", "Positions", "Position")

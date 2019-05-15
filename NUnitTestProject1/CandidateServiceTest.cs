@@ -12,13 +12,13 @@ namespace Tests
     
     public class CandidatesServicesTest
     {
-        private readonly ICandidateServices _candidateServices;
+        private readonly ICandidateRepository _candidateServices;
         
 
         public CandidatesServicesTest()
         {
             //Arrange
-            _candidateServices = new CandidatesServices();
+            _candidateServices = new CandidateRepository();
         }
         [SetUp]
         public void Setup()
@@ -31,7 +31,7 @@ namespace Tests
             //Act
             int count =_candidateServices.GetAll().Count();
             //Assert
-            Assert.AreEqual(count, 7);
+            Assert.AreEqual(count, 6);
         }
 
         [Test]
@@ -54,6 +54,17 @@ namespace Tests
             Candidate candidate = _candidateServices.GetById(id);
             //Assert
             Assert.AreEqual(candidate.Name, "John Smith");
+        }
+
+        [Test]
+        public void Candidate_NotFound_Test()
+        {
+            //Arrange
+            List<string> skills = new List<string> { "Hadup","VB.Net" };
+            //Act
+            Candidate candidate = _candidateServices.SearchCandidateBySkills(skills);
+            //Assert
+            Assert.AreEqual(null, candidate);
         }
     }
 }

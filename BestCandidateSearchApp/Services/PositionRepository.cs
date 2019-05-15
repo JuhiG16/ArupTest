@@ -6,7 +6,7 @@ using BestCandidateSearchApp.Models;
 
 namespace BestCandidateSearchApp.Services
 {
-    public class PositionServices : IPositionServices
+    public class PositionRepository : IPositionRepository
     {
          IEnumerable<Position> positions = new List<Position>
             {
@@ -21,7 +21,9 @@ namespace BestCandidateSearchApp.Services
                     new Position{ PositionId = 105, Name="Database developer",
                     Skills = new List<string>{ "C#", "MVC", "SQL", ".net", "Html", "CSS"} },
                     new Position{ PositionId = 106, Name="PHP developer",
-                    Skills = new List<string>{ "PHP"} }
+                    Skills = new List<string>{ "PHP"} },
+                    new Position{ PositionId = 107, Name="Hadup developer",
+                    Skills = new List<string>{ "Hadup"} }
             };
         
 
@@ -36,19 +38,3 @@ namespace BestCandidateSearchApp.Services
         }
     }
 }
-//public PositionServices()
-//{
-//    positions = new List<Position>
-//    {
-//        new Position{ PositionId = 101, Name="Database developer",
-//            Skills = new List<string>{"Sql", "MongoDb", "Javascript"} },
-//         new Position{ PositionId = 102, Name="React developer",
-//            Skills = new List<string>{"Sql", "React.js", "Javascript"} },
-//          new Position{ PositionId = 103, Name="Java developer",
-//            Skills = new List<string>{"Sql", "Java", "Javascript"} },
-//           new Position{ PositionId = 104, Name=".Net developer",
-//            Skills = new List<string>{"C#", "MVC", "SQL", "Javascript","MongoDb" } },
-//            new Position{ PositionId = 105, Name="Database developer",
-//            Skills = new List<string>{ "C#", "MVC", "SQL", ".net", "Html", "CSS"} }
-//    };
-//}

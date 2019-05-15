@@ -1,0 +1,32 @@
+﻿@model IEnumerable<PositionViewModel>;
+
+@{
+    ViewData["Title"] = "Positions";
+}
+
+<h2>Available Positions</h2>
+
+<table class="table table-primary">
+    <thead>
+        <tr>
+            <th>Position Id</th>
+            <th>Position Name</th>
+            <th>Skills</th>
+            <th>search candidate</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var position in Model)
+        {
+            <tr>
+                <td>@position.PositionId</td>
+                <td>@position.Name</td>
+
+                <td>@string.Join(",", position.Skills.ToArray())</td>              
+                <td>@Html.ActionLink("Search candidate", "BestCandidate", "Candidate", new { posId = position.PositionId })</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+

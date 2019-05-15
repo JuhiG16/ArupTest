@@ -24,5 +24,6 @@ C:\Users\Jw Villawood\Desktop\Arup\BestCandidateSearchApp\BestCandidateSearchApp
 C:\Users\Jw Villawood\Desktop\Arup\BestCandidateSearchApp\BestCandidateSearchApp\obj\Debug\netcoreapp2.1\BestCandidateSearchApp.pdb
 C:\Users\Jw Villawood\Desktop\Arup\BestCandidateSearchApp\BestCandidateSearchApp\obj\Debug\netcoreapp2.1\BestCandidateSearchApp.csproj.CopyComplete
 C:\Users\Jw Villawood\Desktop\Arup\BestCandidateSearchApp\BestCandidateSearchApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\Jw Villawood\Desktop\Arup\BestCandidateSearchApp\BestCandidateSearchApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Positions.g.cshtml.cs
-C:\Users\Jw Villawood\Desktop\Arup\BestCandidateSearchApp\BestCandidateSearchApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\SearchCandidate.g.cshtml.cs
+C:\Users\Jw Villawood\Desktop\Arup\BestCandidateSearchApp\BestCandidateSearchApp\obj\Debug\netcoreapp2.1\Razor\Views\Position\Positions.g.cshtml.cs
+C:\Users\Jw Villawood\Desktop\Arup\BestCandidateSearchApp\BestCandidateSearchApp\obj\Debug\netcoreapp2.1\Razor\Views\Candidate\BestCandidate.g.cshtml.cs
+C:\Users\Jw Villawood\Desktop\Arup\BestCandidateSearchApp\BestCandidateSearchApp\obj\Debug\netcoreapp2.1\Razor\Views\Candidate\NotFount.g.cshtml.cs

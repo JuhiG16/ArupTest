@@ -10,10 +10,10 @@ namespace NUnitTestProject1
     
     class PositionServiceTest
     {
-        private readonly IPositionServices _positionServices;
+        private readonly IPositionRepository _positionServices;
         public PositionServiceTest()
         {
-            _positionServices = new PositionServices();
+            _positionServices = new PositionRepository();
         }
 
         [Test]
@@ -22,7 +22,7 @@ namespace NUnitTestProject1
             //Act
             int count = _positionServices.GetAll().Count();
             //Assert
-            Assert.AreEqual(count, 6);
+            Assert.AreEqual(count, 7);
         }
 
         [Test]
